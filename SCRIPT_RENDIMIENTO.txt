@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Script de informe del sistema
+
+LOG_DIR="logs"
+OUTPUT_FILE="$LOG_DIR/system_report.txt"
+
+mkdir -p "$LOG_DIR"
+
+> "$OUTPUT_FILE"
+
+separator() {
+    echo "========================================" >> "$OUTPUT_FILE"
+separator >> "$OUTPUT_FILE"
+echo "Reporte generado exitosamente en: $OUTPUT_FILE" >> "$OUTPUT_FILE"
+
+echo "Reporte del sistema generado exitosamente"
+echo "Archivo guardado en: $OUTPUT_FILE"
